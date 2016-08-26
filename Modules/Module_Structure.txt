@@ -1,0 +1,13 @@
+Module Structure
+
+Module
+	Workflows
+		Models
+		Views
+		Controllers
+	js
+	css
+	assets
+		images
+		icons
+		files
