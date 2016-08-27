@@ -13,7 +13,7 @@ function sanitize($input,$ret = false){
 	}
 
 	if (count_chars($input)!=count_chars($org)){ $flash_message = "Invalid input string(s) detected!";}
-if ($ret!=false){return $org." : ".$input;}
+	if ($ret!=false){return $org." : ".$input;}
 }
 
 function get_s($arg){
