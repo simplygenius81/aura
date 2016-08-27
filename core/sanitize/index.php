@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 /* This code sanitizes all html inputs to prevent sql injection*/
 
 function sanitize($input,$ret = false){
 	global $escaped_chars,$flash_message;
-	
+
 	$org=$input;
 
 	foreach($escaped_chars as $eitem){
@@ -17,6 +17,5 @@ if ($ret!=false){return $org." : ".$input;}
 }
 
 function get_s($arg){
-	return sanitize($_GET[$arg]);
-} 
-
+	if($_GET[$arg]){return sanitize($_GET[$arg]);}
+}
