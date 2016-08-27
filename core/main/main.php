@@ -16,7 +16,18 @@ function includes($arguments){
 
 	//echo 'this is the main module';
 }
-	function rt($arg){
+
+function dlvl($level){
+	$count=1;
+	$lvlpref='';
+	while($count<=$level){
+		$lvlpref=$lvlpref.'../';
+		$count++;
+	}
+	return $lvlpref;
+}
+
+function rt($arg){
 
 		echo $arg;
 	}
