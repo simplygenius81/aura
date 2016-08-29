@@ -9,8 +9,8 @@
 
 <script type='text/javascript'></script>
 <style>
-	nav{background:#<?echo primary_color?> !important;}
-	.navbar-inverse {border-color:#<?echo secondary_color?> !important;}
+	nav{background:#<?php echo primary_color;?> !important;}
+	.navbar-inverse {border-color:#<?php echo secondary_color;?> !important;}
 </style>
 </head>
 <body>
